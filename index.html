@@ -5,8 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HOT PEPPER</title>
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" href="favicon-32x32.png">
 </head>
-
+  
 <body>
 
 <!-- 🌶️ BACKGROUND -->
@@ -68,13 +72,37 @@ HOT PEPPER — When it starts, it spreads 🔥
 </div>
 </section>
 
-<!-- LIVE CHART -->
+<!-- LIVE CHART 
 <section id="chart" class="chart-section">
 <h2 class="chart-title">Live Chart</h2>
 
 <div class="chart-full">
 <iframe src="https://dexscreener.com/solana/dbfcz37dt275ym4aihf2l58j2tyvbxycf8rh3q5ww3ep?embed=1&theme=dark"></iframe>
 </div>
+</section> -->
+
+<!-- 🔥 MEME SHOWCASE -->
+<section id="gallery" class="section">
+<h2>Meme Showcase</h2>
+
+<div class="meme-slider">
+
+  <button class="meme-btn left">&#10094;</button>
+
+  <div class="meme-track" id="memeTrack">
+    <img src="images/img1.png">
+    <img src="images/img2.png">
+    <img src="images/img3.png">
+    <img src="images/img4.png">
+    <img src="images/img5.png">
+    <img src="images/img6.png">
+    <img src="images/img7.png">
+  </div>
+
+  <button class="meme-btn right">&#10095;</button>
+
+</div>
+
 </section>
 
 <!-- TOKENOMICS -->
@@ -94,12 +122,12 @@ HOT PEPPER — When it starts, it spreads 🔥
 
 <div class="community-buttons">
 
-<a href="#" class="community-btn">
+<a href="https://x.com/hotpeppercoin" class="community-btn">
 <img src="x.png">
 <span>X / Twitter</span>
 </a>
 
-<a href="#" class="community-btn">
+<a href="https://discord.gg/Af2cvHmn7W" class="community-btn">
 <img src="discord.png">
 <span>Discord</span>
 </a>
@@ -111,13 +139,13 @@ HOT PEPPER — When it starts, it spreads 🔥
 <section id="buy" class="buy-section">
 <div class="buy-box">
 
-<h2 class="buy-title">Buy HOT PEPPER</h2>
+<h2 class="buy-title">BUY HOT PEPPER</h2>
 
 <p class="buy-subtitle">
-Trade instantly using Jupiter — fast, simple, and secure.
+Trade instantly   fast, simple, and secure.
 </p>
 
-<a class="buy-button">Buy on Jupiter →</a>
+<a class="buy-button">Buy Now →</a>
 
 </div>
 </section>
@@ -132,15 +160,11 @@ Trade instantly using Jupiter — fast, simple, and secure.
 </span>
 </p>
 </footer>
-
-<script>
-const toggle = document.getElementById("menu-toggle");
-const menu = document.getElementById("menu");
-
-toggle.onclick = () => {
-  menu.classList.toggle("show");
-};
-</script>
-
+<script src="script.js"></script>
+<!-- 🔍 LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img">
+</div>
 </body>
 </html>
